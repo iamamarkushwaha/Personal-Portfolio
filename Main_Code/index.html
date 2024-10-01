@@ -10,7 +10,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="https://logos.textgiraffe.com/logos/logo-name/Amar-designstyle-chess-m.png" alt="logo">
+                <img src="images/AMAR__1_-removebg-preview (1).png" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -20,7 +20,67 @@
 
                 </ul>
             </nav>
+            <div class="header-text">
+                 <p>FrontEnd Developer</p>
+                 <h1>Hi, I'm <span>Amar</span><br> Kushwaha From India</h1>
+            </div>
         </div> 
     </div>
+    <!---------------about----------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/01.jpg">
+                </div>    
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cupiditate, eligendi tempora delectus neque, ab temporibus illum adipisci beatae hic totam vitae minus consequuntur quaerat excepturi iusto culpa, nihil dicta!</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiences')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                     </div>
+                     <div class="tab-contains active-tab" id="Skills">
+                        <ul>
+                            <li><span>FrontEnd</span><br>Developer and Web Designer</li>
+                            <li><span>Communication</span><br>Strong Communication and Team Building</li>
+                            <li><span>App Development</span><br>Building Android Apps</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contains" id="Experiences">
+                        <ul>
+                            <li><span>date</span><br>AICTE AI-ML Intership</li>
+                            <li><span>date</span><br>TCS IQN Communication SKILL</li>
+                            <li><span>date</span><br>Great Learning- Python for Machine Learning</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contains" id="Education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.tech from BTIRT</li>
+                            <li><span>2020-2021</span><br>12<sup>th</sup> from Ankur Higher Secondary School</li>
+                            <li><span>2018-2019</span><br>10<sup>th</sup> from Sanskar Educational Institute School</li>
+                        </ul>
+                     </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontains = document.getElementsByClassName("tab-contains");
+function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontain of tabcontains){
+                tabcontain.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+           
+        }
+    </script>
 </body>
 </html>
