@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0d929a5765.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -67,10 +68,35 @@
              </div>
         </div>
     </div>
+    <!------------------services------------------------>
+    <div id="services">
+        <div class="container"></div>
+        <h1 class="sub-title">My Services</h1>
+        <div class="sevices-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>FrontEnd Developer</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam magnam totam porro veniam reiciendis deserunt ex. Inventore, nemo, consectetur qui quia</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Developer</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam magnam totam porro veniam reiciendis deserunt ex. Inventore, nemo, consectetur qui quia</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam magnam totam porro veniam reiciendis deserunt ex. Inventore, nemo, consectetur qui quia</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontains = document.getElementsByClassName("tab-contains");
-function opentab(tabname){
+        function opentab(tabname){
             for(tablink of tablinks){
                 tablink.classList.remove("active-link")
             }
@@ -79,7 +105,6 @@ function opentab(tabname){
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
-           
         }
     </script>
 </body>
